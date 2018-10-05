@@ -40,22 +40,22 @@ public class RocketShip {
     public static void drawQuarter1(){
         for(int i=1; i<=QUARTERHEIGHT; i++) {
             System.out.print("|");
-            for(int j=3; j>i; j--) {
+            for(int j=QUARTERHEIGHT; j>i; j--) {
                 System.out.print(".");
             }
             for(int k=0; k<i; k++) {
                 System.out.print("/\\");
             }
-            for(int l=3; l>i; l--) {
+            for(int l=QUARTERHEIGHT; l>i; l--) {
                 System.out.print(".");
             }
-            for(int j=3; j>i; j--) {
+            for(int j=QUARTERHEIGHT; j>i; j--) {
                 System.out.print(".");
             }
             for(int k=0; k<i; k++) {
                 System.out.print("/\\");
             }
-            for(int l=3; l>i; l--) {
+            for(int l=QUARTERHEIGHT; l>i; l--) {
                 System.out.print(".");
             }
             System.out.print("|");
@@ -64,12 +64,12 @@ public class RocketShip {
 
     }
     public static void drawQuarter2() {
-        for (int i = 1; i <= 3; i++) {
+        for (int i = 1; i <= QUARTERHEIGHT; i++) {
             System.out.print("|");
             for (int j = 1; j < i; j++) {
                 System.out.print(".");
             }
-            for (int k = 3; k >= i; k--) {
+            for (int k = QUARTERHEIGHT; k >= i; k--) {
                 System.out.print("\\/");
             }
             for (int l = 1; l < i; l++) {
@@ -77,7 +77,7 @@ public class RocketShip {
             }for (int j = 1; j < i; j++) {
                 System.out.print(".");
             }
-            for (int k = 3; k >= i; k--) {
+            for (int k = QUARTERHEIGHT; k >= i; k--) {
                 System.out.print("\\/");
             }
             for (int l = 1; l < i; l++) {
@@ -88,6 +88,8 @@ public class RocketShip {
         }
     }
     public static void drawLine() {
-        System.out.println("+=*=*=*=*=*=*+");
+        for(int i = 1; i<=1; i++) {
+            System.out.print("+");
+            for (int j =
     }
 }
