@@ -12,8 +12,8 @@ class constant to generate output that looks like a rocket ship, which is shown 
 
 
 public class RocketShip {
-    public static final int CONESIZE = 6;
-    public static final int QUARTERSIZE = CONESIZE/2;
+    public static final int QUARTERSIZE = 6;
+    public static final int CONESIZE = QUARTERSIZE*2;
     public static void main(String[] args){
         drawCone();
         drawLine();
