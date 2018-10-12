@@ -1,4 +1,10 @@
-import java.sql.SQLOutput;
+/*
+***************
+Yimo Shen
+AP Computer Science A
+DrawBoxes Project
+***************
+*/
 
 public class DrawBoxes {
 
