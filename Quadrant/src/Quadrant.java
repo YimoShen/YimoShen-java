@@ -1,6 +1,6 @@
 public class Quadrant {
     public static void main (String[] args) {
-        System.out.println(Quadrant(4.3,8.9));
+        System.out.println(Quadrant(4.3,0));
     }
     public static String Quadrant(double x, double y){
         if (x>0 && y>0) {
