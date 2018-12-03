@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 public class RollDice {
     public static final int DICENUM = 1;
     String dice [][] = new String[6][5];
@@ -26,16 +26,14 @@ public class RollDice {
         System.out.println("|  *  |");
         System.out.println("|     |");
     }
-
     public static void printDice() {
         System.out.println("print dice");
     }
-
     public static void rollDice() {
         System.out.println("roll dice");
     }
-
     public static void drawLine() {
         System.out.println("draw line");
     }
 }
+
