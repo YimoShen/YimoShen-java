@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 public class RollDice {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
@@ -22,16 +22,14 @@ public class RollDice {
     public static void defineDice() {
         System.out.println("define dice");
     }
-
     public static void printDice() {
         System.out.println("print dice");
     }
-
     public static void rollDice() {
         System.out.println("roll dice");
     }
-
     public static void drawLine() {
         System.out.println("draw line");
     }
 }
+
