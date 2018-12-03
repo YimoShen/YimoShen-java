@@ -1,26 +1,30 @@
 import java.util.*;
 public class RollDice {
+    public static final int DICENUM = 1;
+    String dice [][] = new String[6][5];
+    String gameDice [][] = new String[DICENUM][5];
+
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
-        System.out.print("DO you want to roll a dice?");
-        String userchoice = console.next();
-        if (userchoice.equals("Yes")){
-            System.out.println("Okay, let's roll a dice.");
-        }
+        System.out.println("Do you want to roll a dice?");
+        String yourPick = console.next();
 
-        while (true) {
+        while (yourPick.equals("Yes")) {
             defineDice();
             printDice();
             rollDice();
             drawLine();
-            break;
-
+            System.out.println("Do you want to play again? Enter Yes or No.");
+            yourPick = console.next();
         }
 
     }
 
     public static void defineDice() {
-        System.out.println("define dice");
+        String TopBottom [] = {"-------"};
+        System.out.println("|     |");
+        System.out.println("|  *  |");
+        System.out.println("|     |");
     }
 
     public static void printDice() {
