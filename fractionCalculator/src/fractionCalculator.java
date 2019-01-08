@@ -25,24 +25,23 @@ public class fractionCalculator {
             token [1] = input;
             token [2] = input;
         }
+        String var1 = " ";
+        String var2 = " ";
+        String var3 = " ";
     }
-    public static String add(final int firstNume, final int firstDenom,
-                             final int secondNume, final int secondDenom) {
+    public static String add(final int firstNume, final int firstDenom, final int secondNume, final int secondDenom) {
         return "";
     }
 
-    public static String subtract(final int firstNume, final int firstDenom,
-                                  final int secondNume, final int secondDenom) {
+    public static String subtract(final int firstNume, final int firstDenom, final int secondNume, final int secondDenom) {
         return "";
     }
 
-    public static String multiply(final int firstNume, final int firstDenom,
-                                  final int secondNume, final int secondDenom) {
+    public static String multiply(final int firstNume, final int firstDenom, final int secondNume, final int secondDenom) {
         return "";
     }
 
-    public static String divide(final int firstNume, final int firstDenom,
-                                final int secondNume, final int secondDenom) {
+    public static String divide(final int firstNume, final int firstDenom, final int secondNume, final int secondDenom) {
         return "";
     }
 
