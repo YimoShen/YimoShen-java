@@ -18,42 +18,59 @@ public class fractionCalculator {
         System.out.println("Enter 3 words or Quit");
 
         while (!input.equals("Quit")) {
+            String token[] = new String[3];
+
             input = console.next();
-            System.out.println(input);
-            String token [] = new String [3];
-            token [0] = input;
-            token [1] = input;
-            token [2] = input;
+            if (input.equals("Quit")) {
+                break;
+            }
+            token[0] = input;
+
+            input = console.next();
+            if (input.equals("Quit")){
+                break;
+            }
+            token[1] = input;
+
+            input = console.next();
+            if (input.equals("Quit")){
+                break;
+            }
+            token[2] = input;
+
+            System.out.println(token[0]);
+            System.out.println(token[1]);
+            System.out.println(token[2]);
         }
-        String var1 = " ";
-        String var2 = " ";
-        String var3 = " ";
-    }
-    public static String add(final int firstNume, final int firstDenom, final int secondNume, final int secondDenom) {
-        return "";
-    }
-
-    public static String subtract(final int firstNume, final int firstDenom, final int secondNume, final int secondDenom) {
-        return "";
-    }
-
-    public static String multiply(final int firstNume, final int firstDenom, final int secondNume, final int secondDenom) {
-        return "";
-    }
-
-    public static String divide(final int firstNume, final int firstDenom, final int secondNume, final int secondDenom) {
-        return "";
     }
 
     public static int parseWhole(final String fraction) {
-        return 0;
+        if (fraction.contains("_")) {
+            return Integer.parseInt(fraction.substring(0, fraction.indexOf("_")));
+        } else {
+            return 0;
+        }
     }
 
     public static int parseNume(final String fraction) {
-        return 0;
+        if (fraction.contains("_")) {
+            String a = fraction.substring(fraction.indexOf("_")+1);
+           return Integer.parseInt(fraction.substring(0, fraction.indexOf("/")));
+        } else if (fraction.contains("/")) {
+            String b = fraction.substring(0, fraction.indexOf("/"));
+            return Integer.parseInt(b);
+        }
+        else {
+            return 0;
+        }
     }
 
     public static int parseDenom(final String fraction) {
-        return 0;
+        if (fraction.contains("/")) {
+            String Demom = fraction.substring(fraction.indexOf("/")) + 1;
+            return Integer.parseInt(fraction);
+        } else {
+            return 1;
+        }
     }
 }
