@@ -11,6 +11,8 @@ Fraction Calculator Project
 import java.util.*;
 public class fractionCalculator {
     public static void main(String[] args) {
+
+        //Looper
         Scanner userInput = new Scanner(System.in);
         System.out.println("To begin, enter start.");
         String input = userInput.next();
@@ -44,6 +46,8 @@ public class fractionCalculator {
         }
     }
 
+    //Parser
+
     public static int parseWhole(final String fraction) {
         if (fraction.contains("_")) {
             return Integer.parseInt(fraction.substring(0, fraction.indexOf("_")));
@@ -73,4 +77,8 @@ public class fractionCalculator {
             return 1;
         }
     }
+
+    //littleCalc
+    int denominator1;
+    int denominator2;
 }
